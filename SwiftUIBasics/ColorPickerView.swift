@@ -22,9 +22,9 @@ struct ColorPicker: View {
             Image(systemName: "gamecontroller.fill")
                 .foregroundColor(Color(red: red, green: green, blue: blue, opacity: 1.0))
                 .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-            ColorSliderView(colorValue: $red)
-            ColorSliderView(colorValue: $green)
-            ColorSliderView(colorValue: $blue)
+            ColorSliderView(colorValue: $red, color: .red)
+            ColorSliderView(colorValue: $green, color: .green)
+            ColorSliderView(colorValue: $blue, color: .blue)
 
         }
     }
